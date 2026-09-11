@@ -33,7 +33,7 @@ hr { border-bottom: 3px solid #0068FF; }
 .stat-count { font-size: 2rem; font-weight: bold; }
 
 footer .inline-list { list-style: none; margin: 0; padding: 0; }
-footer .inline-list li { display: flex;}
+footer .inline-list li { display: flex; aligh-item: center}
 
 footer {
   width: 700px; 
