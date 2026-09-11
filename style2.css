@@ -58,6 +58,29 @@ footer .inline-list li {display: inline-block;}
 }
 
 
-footer .inline-list li {margin-right: 40px;}
-footer a {border: none; color: #0068FF;}
-footer {margin: 0 auto; position: absolute; bottom: 55%; right: -255px; padding: 40px 0 0 0; width: 600px; -webkit-transform: rotate(360deg);}
+footer {
+  position: absolute;
+  bottom: 55%; 
+  right: 0;                /* Lock it right against the screen edge */
+  width: 600px; 
+  padding: 40px 0 0 0;
+  
+  /* Modern rotation standard */
+  rotate: -90deg;          
+  
+  /* Fixes the layout skew: shifts the anchor point to the right edge 
+     and perfectly recalculates its new rotated center line */
+  transform-origin: right center; 
+  translate: 0 50%; 
+}
+
+/* Your clean list style remains the same */
+footer .inline-list li {
+  margin-right: 40px;
+}
+
+footer a {
+  border: none; 
+  color: #0068FF;
+}
+
